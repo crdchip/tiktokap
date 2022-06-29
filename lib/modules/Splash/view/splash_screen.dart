@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tiktokap/modules/Splash/controller/splash_controller.dart';
-
+import 'package:tiktokap/modules/auth/view/auth_screen.dart';
+import 'package:tiktokap/modules/dash_boar/view/dash_boar_screen.dart';
 
 class SplashPage extends GetView<SplashController> {
   const SplashPage({Key? key}) : super(key: key);
@@ -9,7 +10,7 @@ class SplashPage extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<SplashController>(builder: (_) {
-      return controller.userStatus == true ? DashBoarPage() : AuthPage();
+      return controller.userStatus == true ? AuthPage() : DashBoarPage();
     });
   }
 }
