@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tiktokap/modules/dash_boar/controller/dash_boar_controller.dart';
+import 'package:tiktokap/modules/discover/view/discover_screen.dart';
 import 'package:tiktokap/modules/home/view/home_screen.dart';
+import 'package:tiktokap/modules/message/view/messager_screen.dart';
 
 class DashBoarPage extends StatefulWidget {
   DashBoarPage({Key? key}) : super(key: key);
@@ -30,30 +32,16 @@ class _DashBoarPageState extends State<DashBoarPage> {
       index: pageIndex,
       children: [
         HomePage(),
+        DiscoverPage(),
         const Center(
           child: Text(
-            "Friend",
+            "",
             style: TextStyle(
               fontSize: 20,
             ),
           ),
         ),
-        const Center(
-          child: Text(
-            "Add",
-            style: TextStyle(
-              fontSize: 20,
-            ),
-          ),
-        ),
-        const Center(
-          child: Text(
-            "Message",
-            style: TextStyle(
-              fontSize: 20,
-            ),
-          ),
-        ),
+        MessagerPage(),
         const Center(
           child: Text(
             "Profile",
@@ -70,12 +58,12 @@ class _DashBoarPageState extends State<DashBoarPage> {
     List bottomItems = [
       {
         "icon": Icons.home,
-        "label": "Home",
+        "label": "Trang chủ",
         "isIcon": true,
       },
       {
-        "icon": Icons.person,
-        "label": "Friend",
+        "icon": Icons.directions_car_outlined,
+        "label": "Khám phá",
         "isIcon": true,
       },
       {
@@ -85,12 +73,12 @@ class _DashBoarPageState extends State<DashBoarPage> {
       },
       {
         "icon": Icons.message,
-        "label": "Message",
+        "label": "Tin nhắn",
         "isIcon": true,
       },
       {
         "icon": Icons.person,
-        "label": "Profile",
+        "label": "Thông tin",
         "isIcon": true,
       }
     ];

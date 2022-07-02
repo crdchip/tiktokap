@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 import 'package:tiktokap/modules/Splash/controller/splash_controller.dart';
 import 'package:tiktokap/modules/auth/view/auth_screen.dart';
 import 'package:tiktokap/modules/dash_boar/view/dash_boar_screen.dart';
+import 'package:tiktokap/modules/discover/view/discover_screen.dart';
+import 'package:tiktokap/modules/message/view/messager_screen.dart';
 
 class SplashPage extends GetView<SplashController> {
   const SplashPage({Key? key}) : super(key: key);

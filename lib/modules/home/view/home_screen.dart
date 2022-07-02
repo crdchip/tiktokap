@@ -93,7 +93,7 @@ class HomePage extends GetView<HomeController> {
         },
         pageSnapping: true,
         scrollDirection: Axis.vertical,
-        itemCount: videos.length,
+        itemCount: videos.length, 
         itemBuilder: (context, index) {
           return Stack(
             children: [

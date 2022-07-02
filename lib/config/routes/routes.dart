@@ -10,4 +10,5 @@ abstract class Routes {
   static final HOMEPAGE = "/homepage";
   static final TIKTOK = "/tiktok";
   static final REGISTER = "/register";
+  static final DISCOVER = "/discover";
 }

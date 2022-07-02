@@ -42,7 +42,11 @@ class _AuthPageState extends State<AuthPage> {
           ),
           FormButton(
             text: 'Login',
-            onLogin: () {},
+            onLogin: () {
+              if (nameController.value.text != "") {
+                Get.toNamed(Routes.HOMEPAGE);
+              }
+            },
           ),
           const SizedBox(
             height: 20,
