@@ -4,6 +4,7 @@ import 'package:tiktokap/modules/dash_boar/controller/dash_boar_controller.dart'
 import 'package:tiktokap/modules/discover/view/discover_screen.dart';
 import 'package:tiktokap/modules/home/view/home_screen.dart';
 import 'package:tiktokap/modules/message/view/messager_screen.dart';
+import 'package:tiktokap/modules/profiles/view/profile_screen.dart';
 
 class DashBoarPage extends StatefulWidget {
   DashBoarPage({Key? key}) : super(key: key);
@@ -42,14 +43,7 @@ class _DashBoarPageState extends State<DashBoarPage> {
           ),
         ),
         MessagerPage(),
-        const Center(
-          child: Text(
-            "Profile",
-            style: TextStyle(
-              fontSize: 20,
-            ),
-          ),
-        ),
+        ProfilePage(),
       ],
     );
   }
