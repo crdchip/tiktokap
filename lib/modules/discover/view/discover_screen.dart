@@ -40,7 +40,7 @@ class DiscoverPage extends GetView<DiscoverController> {
                                   ),
                                 )
                               : Container(
-                                  margin: EdgeInsets.only(
+                                  margin: const EdgeInsets.only(
                                     left: 10,
                                   ),
                                   color: Colors.white,
@@ -53,7 +53,7 @@ class DiscoverPage extends GetView<DiscoverController> {
                                             height: size.height * 0.08,
                                             width: size.width,
                                             child: ListTile(
-                                              leading: Icon(
+                                              leading: const Icon(
                                                 Icons.ac_unit_outlined,
                                                 size: 40,
                                               ),
@@ -64,20 +64,21 @@ class DiscoverPage extends GetView<DiscoverController> {
                                         SizedBox(
                                           height: size.height * 0.17,
                                           child: ListView.builder(
-                                            itemCount: videos.length,
+                                            itemCount: 6,
                                             scrollDirection: Axis.horizontal,
                                             itemBuilder: (context, index) {
                                               return Container(
-                                                margin: EdgeInsets.only(
+                                                margin: const EdgeInsets.only(
                                                   left: 5,
                                                   top: 5,
                                                 ),
                                                 width: 90,
                                                 color: Colors.black45,
                                                 child: Center(
-                                                  child: VideoClient(
-                                                    video: videos[index],
-                                                  ),
+                                                  // child: VideoClient(
+                                                  //   video: videos[index],
+                                                  // ),
+                                                  child: Text("Video $index"),
                                                 ),
                                               );
                                             },

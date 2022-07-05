@@ -43,7 +43,7 @@ class _DashBoarPageState extends State<DashBoarPage> {
           ),
         ),
         MessagerPage(),
-        ProfilePage(),
+        const ProfilePage(),
       ],
     );
   }
