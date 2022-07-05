@@ -4,6 +4,7 @@ import 'package:tiktokap/modules/Splash/view/splash_screen.dart';
 import 'package:tiktokap/modules/dash_boar/view/dash_boar_screen.dart';
 import 'package:tiktokap/modules/discover/view/discover_screen.dart';
 import 'package:tiktokap/modules/home/view/home_screen.dart';
+import 'package:tiktokap/modules/profiles/view/profile_screen.dart';
 
 part './routes.dart';
 
@@ -33,11 +34,11 @@ abstract class AppPages {
       // binding: SplashBinding(),
       preventDuplicates: false,
     ),
-    // GetPage(
-    //   name: Routes.AUTH,
-    //   page: () => AuthPage(),
-    //   // binding: SplashBinding(),
-    //   preventDuplicates: false,
-    // ),
+    GetPage(
+      name: Routes.PROFILE,
+      page: () => ProfilePage(),
+      // binding: SplashBinding(),
+      preventDuplicates: false,
+    ),
   ];
 }

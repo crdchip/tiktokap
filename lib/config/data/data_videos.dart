@@ -1,5 +1,4 @@
-
-
+import 'package:tiktokap/config/data/user_detail.dart';
 import 'package:tiktokap/config/data/users.dart';
 import 'package:tiktokap/config/data/videos.dart';
 
@@ -13,4 +12,23 @@ List<Video> videos = [
   Video("video2.mp4", "13k", "236", "356", User2),
   Video("video3.mp4", "13k", "236", "356", User3),
   Video("video4.mp4", "13k", "236", "356", User4),
+];
+
+List<UserDetail> userdetails = [
+  UserDetail(
+    "Jacob West",
+    "jacob_w",
+    "tiktok.com@jacob_w",
+    "",
+    "",
+    "",
+  ),
+  UserDetail(
+    "Jacob West 2",
+    "jacob_w",
+    "tiktok.com@jacob_w",
+    "",
+    "",
+    "",
+  ),
 ];
