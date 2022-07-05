@@ -7,6 +7,7 @@ import 'package:tiktokap/modules/discover/view/discover_screen.dart';
 import 'package:tiktokap/modules/edit_profile/view/edit_profile.dart';
 import 'package:tiktokap/modules/message/view/messager_screen.dart';
 import 'package:tiktokap/modules/profiles/view/profile_screen.dart';
+import 'package:tiktokap/modules/settings/view/setting_screen.dart';
 
 class SplashPage extends GetView<SplashController> {
   const SplashPage({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class SplashPage extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<SplashController>(builder: (_) {
-      return controller.userStatus == true ? AuthPage() : EditProFile();
+      return controller.userStatus == true ? AuthPage() : SettingPage();
     });
   }
 }
