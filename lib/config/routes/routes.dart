@@ -14,4 +14,5 @@ abstract class Routes {
   static final PROFILE = "/profile";
   static final EDIT_PROFILE = "/edit_profile";
   static final SETTINGS = "/settings";
+  static final FIND_FRIEND = "/find_friend";
 }
